@@ -6,7 +6,7 @@ package ProyectoUMG;
 
 /**
  *
- * @author acer
+ * @author Willy
  */
 public class ListaActividades {
     
