@@ -58,7 +58,7 @@ public class Tablero implements Serializable {
     // Metodo analizador
     // podemos agregar atributos para imprimir las instancias
     public String toString(){
-        return "Nombre del tablero " + this.Id + "-"+ this.nombre;
+        return "Nombre del tablero: " + " - "+ this.nombre;
     }
    
 }
