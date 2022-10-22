@@ -4,11 +4,13 @@
  */
 package ProyectoUMG;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Willy
  */
-public class Lista_Tareas {
+public class Lista_Tareas implements Serializable { 
     
     
        //Creacion de atributos
