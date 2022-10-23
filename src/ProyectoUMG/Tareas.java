@@ -4,23 +4,25 @@
  */
 package ProyectoUMG;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Willy
  */
-public class Tareas {
+public class Tareas implements Serializable {
     
     
     //Creacion de atributos
     private String nombreTareas;
     private int Id;
-    private String descripcion;
+    
     
     //Metodo contructor 
-    public Tareas(String nombreTareas, int Id, String descripcion) {
+    public Tareas(String nombreTareas, int Id) {
         this.nombreTareas = nombreTareas;
         this.Id = Id;
-        this.descripcion = descripcion;
+    
     }
 
       //Metodo consultor
@@ -43,21 +45,17 @@ public class Tareas {
         this.Id = Id;
     }
 
-      //Metodo consultor
-    public String getDescripcion() {
-        return descripcion;
-    }
+     
+    
         
-      //Metodo consultor
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
+  
+    
     
     // Metodo analizador
     // podemos agregar atributos para imprimir las instancias
  
     public String mostrarDatos (){
-        return "Nombre de tarea " + this.nombreTareas + " " + " Descripcion: " + this.descripcion;
+        return "Nombre de tarea " + this.nombreTareas;
               
     }   
    
